@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Stamp } from './components/Stamp';
+import content from './assets/content/data.json';
+import { Main, Description, Title, VillasContainer, HeaderTitle } from './components/StyledComponents';
+import { Villa } from './components/Villa';
+import { ButtonGradient } from './components/ButtonGradient';
 
 function App() {
+  const { 
+    headText,
+    title,
+    description,
+    bookNowText,
+    villas
+  } = content;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Stamp />
+      <div className='w-[680px] flex items-center flex-col pt-[80px] pb-[40px]'>
+        <div className='w-[438px] flex-col gap-10 flex relative'>
+          <HeaderTitle>{headText}</HeaderTitle>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+          <ButtonGradient title={bookNowText} />
+        </div>
+      </div>
+      <VillasContainer>
+        {villas.map((villa, index) => <Villa key={index} {...villa} />)}
+      </VillasContainer>
+    </Main>
   );
 }
 

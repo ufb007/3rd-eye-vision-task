@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AktivGrotesk-Bold';
+  src: url('./assets/fonts/aktiv-grotesk/AktivGrotesk-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'AktivGrotesk-Regular';
+  src: url('./assets/fonts/aktiv-grotesk/AktivGrotesk-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'domaine-display-bold';
+  src: url('./assets/fonts/domaine-display/domaine-display-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'domaine-display-regular';
+  src: url('./assets/fonts/domaine-display/domaine-display-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HaikusScriptv09Bold';
+  src: url('./assets/fonts/haikus-script/HaikusScriptv09Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HaikusScriptv09Regular';
+  src: url('./assets/fonts/haikus-script/HaikusScriptv09Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply bg-blue bg-auto bg-no-repeat bg-right-top;
+
+  background-image: url('./assets/images/wave-bg.png');
 }

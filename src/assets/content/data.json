@@ -1,0 +1,24 @@
+{
+    "headText": "Our Extraordinary",
+    "title": "Villa Holidays",
+    "description": "Private villa holidays with Villa Travels are all about the extraordinary, especially when it comes to our collection of villas and chateaux. Quirky, stylish and full of character, our villas for rent have been handpicked by our knowledgeable destination experts who are the best in the business. So one year you could be in a medieval castle, and the next you could be soaking up the sun on your very own private island.",
+    "bookNowText": "Book Now",
+    "villas": [
+        {
+            "name": "Villas with Pools",
+            "image": "villas-with-pools.png"
+        },
+        {
+            "name": "Romantic Villas",
+            "image": "romantic-villas.png"
+        },
+        {
+            "name": "Beach Villas",
+            "image": "beach-villas.png"
+        },
+        {
+            "name": "Sustainable",
+            "image": "sustainable-villas.png"
+        }
+    ]
+}
