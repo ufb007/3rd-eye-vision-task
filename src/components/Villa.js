@@ -8,7 +8,7 @@ export const Villa = ({ name, image }) => {
         <div className="
                 bg-cover 
                 bg-center 
-                w-[338px]
+                w-[340px]
                 flex
                 z-0
                 relative

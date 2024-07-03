@@ -16,7 +16,7 @@ function App() {
   return (
     <Main>
       <Stamp />
-      <div className='w-[680px] flex items-center flex-col pt-[80px] pb-[40px]'>
+      <div className='w-[438px] 2xl:w-[680px] flex items-center flex-col pt-[85px] pb-[40px]'>
         <div className='w-[438px] flex-col gap-10 flex relative'>
           <HeaderTitle>{headText}</HeaderTitle>
           <Title>{title}</Title>

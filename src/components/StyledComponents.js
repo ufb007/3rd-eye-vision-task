@@ -2,8 +2,12 @@ import tw from "tailwind-styled-components";
 
 export const Main = tw.div`
     flex
+    flex-col
+    md:flex-row
+    items-center
+    md:justify-center
     text-main
-    pt-[48px]
+    gap-[50px]
 `;
 
 export const HeaderTitle = tw.h2`
@@ -33,11 +37,12 @@ export const Description = tw.p`
 export const VillasContainer = tw.div`
     flex
     flex-wrap
-    w-[680px]
+    w-[340px]
+    xl:w-[685px]
     text-white
     font-AG-Bold
     font-weight-700
     text-[24px]
     gap-[2px]
-    mt-[30px]
+    pt-[40px]
 `;
