@@ -6,9 +6,9 @@ export const Villa = ({ name, image }) => {
 
     return (
         <div className="
+                flex-grow-0 flex-shrink-0 w-[calc(50%-1px)]
                 bg-cover 
                 bg-center 
-                w-1/2
                 h-[185px]
                 md:w-[340px]
                 md:h-auto

@@ -17,7 +17,8 @@ export const Content = tw.div`
     flex-col 
     px-[30px]
     w-full
-    md:w-[438px] 
+    md:w-[400px]
+    lg:w-[438px] 
     2xl:w-[680px] 
     pt-[60px] 
     sm:pt-[85px] 
@@ -60,5 +61,5 @@ export const VillasContainer = tw.div`
     font-AG-Bold
     font-weight-700
     pt-[40px]
-    md:gap-[2px]
+    gap-[2px]
 `;

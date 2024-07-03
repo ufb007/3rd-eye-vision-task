@@ -17,13 +17,13 @@ function App() {
     <Main>
       <Stamp />
       <Content>
-        <div className='w-full md:w-[438px] flex-col gap-10 flex relative'>
+        <div className='w-full md:w-[400px] lg:w-[438px] flex-col gap-10 flex relative'>
           <HeaderTitle>{headText}</HeaderTitle>
           <Title>{title}</Title>
           <Description>{description}</Description>
 
           <div className='hidden md:flex md:visible justify-center md:justify-start'>
-            <ButtonGradient title={bookNowText} />
+            <ButtonGradient title={bookNowText}  />
           </div>
         </div>
       </Content>
