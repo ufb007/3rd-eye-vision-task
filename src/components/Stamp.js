@@ -7,9 +7,12 @@ export const Stamp = ({ className }) => {
                 className='
                     opacity-15
                     absolute 
-                    top-[23px] 
-                    left-[39px]
-                    w-[281px]
+                    md:top-[23px] 
+                    md:left-[39px]
+                    top-[10px]
+                    right-[10px]
+                    w-[140px]
+                    md:w-[281px]
                 '
             />
 }

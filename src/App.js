@@ -1,6 +1,6 @@
 import { Stamp } from './components/Stamp';
 import content from './assets/content/data.json';
-import { Main, Description, Title, VillasContainer, HeaderTitle } from './components/StyledComponents';
+import { Main, Content, Description, Title, VillasContainer, HeaderTitle } from './components/StyledComponents';
 import { Villa } from './components/Villa';
 import { ButtonGradient } from './components/ButtonGradient';
 
@@ -16,16 +16,23 @@ function App() {
   return (
     <Main>
       <Stamp />
-      <div className='w-[438px] 2xl:w-[680px] flex items-center flex-col pt-[85px] pb-[40px]'>
-        <div className='w-[438px] flex-col gap-10 flex relative'>
+      <Content>
+        <div className='w-full md:w-[438px] flex-col gap-10 flex relative'>
           <HeaderTitle>{headText}</HeaderTitle>
           <Title>{title}</Title>
           <Description>{description}</Description>
-          <ButtonGradient title={bookNowText} />
+
+          <div className='hidden md:flex md:visible justify-center md:justify-start'>
+            <ButtonGradient title={bookNowText} />
+          </div>
         </div>
-      </div>
+      </Content>
       <VillasContainer>
         {villas.map((villa, index) => <Villa key={index} {...villa} />)}
+
+        <div className='visible flex md:hidden justify-center w-full py-10'>
+          <ButtonGradient title={bookNowText} />
+        </div>
       </VillasContainer>
     </Main>
   );

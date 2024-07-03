@@ -6,15 +6,31 @@ export const Main = tw.div`
     md:flex-row
     items-center
     md:justify-center
+    md:items-stretch
     text-main
-    gap-[50px]
+    md:gap-[50px]
+`;  
+
+export const Content = tw.div`
+    flex 
+    items-center 
+    flex-col 
+    px-[30px]
+    w-full
+    md:w-[438px] 
+    2xl:w-[680px] 
+    pt-[60px] 
+    sm:pt-[85px] 
+    pb-[40px]
 `;
 
 export const HeaderTitle = tw.h2`
     font-Haikus-Bold
-    text-[32px]
+    text-[24px]
+    md:text-[32px]
     absolute
-    left-[-38px]
+    left-[-15px]
+    md:left-[-38px]
     top-[-28px]
     bg-gradient-to-r
     from-primary
@@ -26,7 +42,8 @@ export const HeaderTitle = tw.h2`
 
 export const Title = tw.h1`
     font-DD-Bold
-    text-[64px]
+    text-[30px]
+    md:text-[64px]
 `;
 
 export const Description = tw.p`
@@ -37,12 +54,11 @@ export const Description = tw.p`
 export const VillasContainer = tw.div`
     flex
     flex-wrap
-    w-[340px]
+    md:w-[340px]
     xl:w-[685px]
     text-white
     font-AG-Bold
     font-weight-700
-    text-[24px]
-    gap-[2px]
     pt-[40px]
+    md:gap-[2px]
 `;

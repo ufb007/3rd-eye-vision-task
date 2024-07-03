@@ -45,7 +45,5 @@
 }
 
 body {
-  @apply bg-blue bg-auto bg-no-repeat bg-right-top;
-
-  background-image: url('./assets/images/wave-bg.png');
+  @apply bg-blue bg-auto bg-no-repeat bg-right-top md:bg-[url('./assets/images/wave-bg.png')] bg-none;
 }
