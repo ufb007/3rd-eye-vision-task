@@ -10,7 +10,6 @@ export const ButtonGradient = ({title}) => {
                 py-4
                 px-8
                 w-[226px]
-                sm:w-1/2
                 flex
                 justify-between
                 items-center
