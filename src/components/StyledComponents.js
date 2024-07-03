@@ -31,7 +31,8 @@ export const HeaderTitle = tw.h2`
     md:text-[32px]
     absolute
     left-[-15px]
-    md:left-[-38px]
+    md:left-[20px]
+    lg:left-[-38px]
     top-[-28px]
     bg-gradient-to-r
     from-primary
@@ -44,7 +45,8 @@ export const HeaderTitle = tw.h2`
 export const Title = tw.h1`
     font-DD-Bold
     text-[30px]
-    md:text-[64px]
+    md:text-[44px]
+    lg:text-[64px]
 `;
 
 export const Description = tw.p`
@@ -60,6 +62,6 @@ export const VillasContainer = tw.div`
     text-white
     font-AG-Bold
     font-weight-700
-    pt-[40px]
+    pt-[30px]
     gap-[2px]
 `;

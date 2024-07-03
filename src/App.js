@@ -1,6 +1,12 @@
 import { Stamp } from './components/Stamp';
 import content from './assets/content/data.json';
-import { Main, Content, Description, Title, VillasContainer, HeaderTitle } from './components/StyledComponents';
+import { 
+  Main, 
+  Content, 
+  Description, 
+  Title, 
+  VillasContainer, 
+  HeaderTitle } from './components/StyledComponents';
 import { Villa } from './components/Villa';
 import { ButtonGradient } from './components/ButtonGradient';
 
@@ -17,7 +23,7 @@ function App() {
     <Main>
       <Stamp />
       <Content>
-        <div className='w-full md:w-[400px] lg:w-[438px] flex-col gap-10 flex relative'>
+        <div className='w-full md:w-[400px] lg:w-[438px] flex-col gap-10 flex relative md:px-[30px] lg:px-0'>
           <HeaderTitle>{headText}</HeaderTitle>
           <Title>{title}</Title>
           <Description>{description}</Description>
